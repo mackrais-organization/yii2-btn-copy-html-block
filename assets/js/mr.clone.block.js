@@ -36,7 +36,7 @@ $(document).ready(function(){
         e.preventDefault();
         var $this = $(this);
         var onBeforeInsert = typeof ($this.attr('before-insert')) == "undefined" ? '' : new Function('event',"$this","$cloneBlock",$this.attr('before-insert'));
-        var onAfterInsert = typeof ($this.attr('after-insert')) == "undefined" ? '' : new Function('event',"$this","$cloneBlock","$clonedBlock",$this.attr('after-insert'));
+        var onAfterInsert = typeof ($this.attr('after-insert')) == "undefined" ? '' : new Function('event',"$this","$cloneBlock","$tmpBlock",$this.attr('after-insert'));
         var $clone_block = typeof ($this.data('mr-clone-block')) == "undefined"  ? $this : $this.parents($this.data('mr-clone-block')).eq(0);
         $clone_block.val('');
         if(typeof onBeforeInsert == "function")
