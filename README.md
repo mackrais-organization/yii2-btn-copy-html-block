@@ -38,9 +38,6 @@ to the require section of your `composer.json` file.
 ## Usage
 
 ```php
-
-<?php 
-?>
    <div class="mr-color-input pull-left">
            <?= $form->field($model, 'colors[]')->textInput(['type'=>'color','class'=>'product-color-input '])->label(false) ?>
            <?= mackrais\copyblock\Widget::widget([
