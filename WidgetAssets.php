@@ -16,7 +16,7 @@ use yii\web\AssetBundle;
  */
 class WidgetAssets extends AssetBundle
 {
-    public $sourcePath = '@@mackrais/copyblock/assets';
+    public $sourcePath = '@mackrais/copyblock/assets';
     public $baseUrl = '@mackrais/copyblock/assets';
 
     public $depends = [
