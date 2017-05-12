@@ -7,8 +7,9 @@
 [![Monthly Downloads](https://poser.pugx.org/mackrais/yii2-btn-copy-html-block/d/monthly)](https://packagist.org/packages/mackrais/yii2-btn-copy-html-block)
 [![Daily Downloads](https://poser.pugx.org/mackrais/yii2-btn-copy-html-block/d/daily)](https://packagist.org/packages/mackrais/yii2-btn-copy-html-block)
 
-![Screenshot](https://archive.org/download/screen-yii2-btn-copy-html-block/screen-yii2-btn-copy-html-block.png)
-![Screenshot](https://archive.org/download/screen-yii2-btn-copy-html-block1/screen-yii2-btn-copy-html-block1.png)
+
+> NOTE: Widget should always be the block that we cloned.
+
 
 Installation
 ------------
@@ -77,6 +78,12 @@ to the require section of your `composer.json` file.
     }
 
 ```
+
+## Result
+
+![Screenshot](https://archive.org/download/screen-yii2-btn-copy-html-block/screen-yii2-btn-copy-html-block.png)
+![Screenshot](https://archive.org/download/screen-yii2-btn-copy-html-block1/screen-yii2-btn-copy-html-block1.png)
+
 
 
 ## License
