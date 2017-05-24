@@ -30,7 +30,7 @@ or
 or add
 
 ```
- composer require mackrais/yii2-btn-copy-html-block:"dev-master"
+ composer require --prefer-dist mackrais/yii2-btn-copy-html-block "dev-master"
 ```
 
 to the require section of your `composer.json` file.
