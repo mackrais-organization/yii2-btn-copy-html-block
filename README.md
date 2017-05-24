@@ -25,12 +25,12 @@ php composer.phar require --prefer-dist mackrais/yii2-btn-copy-html-block "dev-m
 or 
 
 ```
-"mackrais/yii2-btn-copy-html-block": "dev-master"
+ composer require --prefer-dist mackrais/yii2-btn-copy-html-block "dev-master"
 ```
 or add
 
 ```
- composer require --prefer-dist mackrais/yii2-btn-copy-html-block "dev-master"
+"mackrais/yii2-btn-copy-html-block": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
