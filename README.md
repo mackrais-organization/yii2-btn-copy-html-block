@@ -43,7 +43,8 @@ to the require section of your `composer.json` file.
            <?= mackrais\copyblock\Widget::widget([
                'caption'=>'', // any text button
                'options'=>[
-                 'class'=>'my-class', // Options yii\helpers\Html::a()  
+                 'class'=>'my-class', // Options yii\helpers\Html::a()
+                 'classRemoveBtn' => 'my-class' // for example glyphicon glyphicon-trash
                 ], // any text button
                'beforeInsertBlock'=>'beforeClone(event, $this, $cloneBlock)', // 
                'afterInsertBlock'=>'afterClone(event, $this, $cloneBlock, $tmpBlock)', // 
