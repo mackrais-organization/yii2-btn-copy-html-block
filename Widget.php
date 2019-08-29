@@ -79,7 +79,7 @@ class Widget extends \yii\base\Widget
     public function run()
     {
         $options = [
-            'class' => 'mr-btn-add',
+            'class' => 'mr-btn-add ' . (isset($this->options['class']) ? $this->options['class'] : '' ),
             'data-mr-event' => 'cloneBlock',
             'data-mr-clone-block' => $this->selectorCloneBlock
         ];
@@ -97,6 +97,10 @@ class Widget extends \yii\base\Widget
 
         if (!empty($this->options) && is_array($this->options)) {
             $options = array_merge($this->options, $options);
+        }
+        if(isset($options['classRemoveBtn'])){
+            $options['data-mr-class-remove-btn'] = $this->options['classRemoveBtn'];
+            unset($options['classRemoveBtn']);
         }
         return Html::a($this->caption, 'javascript:', $options);
     }
