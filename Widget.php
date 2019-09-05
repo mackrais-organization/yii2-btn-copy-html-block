@@ -18,6 +18,9 @@ use yii\helpers\Html;
  */
 class Widget extends \yii\base\Widget
 {
+    const EVENT_CLONE_BLOCK = 'cloneBlock';
+    const EVENT_DELETE_BLOCK = 'deleteBlock';
+
     /**
      * @var string
      */
@@ -64,6 +67,8 @@ class Widget extends \yii\base\Widget
      */
     public $afterDeleteBlock;
 
+    public $event = self::EVENT_CLONE_BLOCK;
+
     /**
      * @inheritdoc
      */
@@ -80,7 +85,7 @@ class Widget extends \yii\base\Widget
     {
         $options = [
             'class' => 'mr-btn-add ' . (isset($this->options['class']) ? $this->options['class'] : '' ),
-            'data-mr-event' => 'cloneBlock',
+            'data-mr-event' => $this->event,
             'data-mr-clone-block' => $this->selectorCloneBlock
         ];
         if(!empty($this->beforeInsertBlock))
